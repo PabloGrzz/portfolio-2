@@ -1,12 +1,79 @@
-# React + Vite
+🚀 Portfolio de Pablo Fernández
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal de Pablo Fernández, desarrollador Full Stack, que muestra proyectos web y móviles con animaciones interactivas y diseño moderno.
 
-Currently, two official plugins are available:
+🛠️ Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend: React ⚛️, Tailwind CSS 🎨
 
-## Expanding the ESLint configuration
+Animaciones: GSAP ✨, Framer Motion 🏃‍♂️
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3D / Interactividad: Spline 🖼️
+
+Herramientas de desarrollo: Vite ⚡, Git 🐙
+
+🗂️ Estructura del proyecto
+/src
+  /components
+    - HeroSection.jsx
+    - AboutSection.jsx
+    - ProjectSection.jsx
+    - ContactSection.jsx
+    - Header.jsx
+    - CustomCursor.jsx
+  App.jsx
+  main.jsx
+tailwind.config.js
+vite.config.js
+package.json
+
+
+HeroSection 🎬: Sección principal con animaciones iniciales y Spline 3D.
+
+AboutSection 👤: Información personal con animaciones y estrellas flotantes.
+
+ProjectSection 💻: Portfolio de proyectos con scroll horizontal y animaciones GSAP.
+
+ContactSection 📩: Sección de contacto con animación de zoom y aparición de texto.
+
+⚡ Cómo ejecutar el proyecto
+
+Clonar el repositorio:
+
+git clone <URL_DEL_REPOSITORIO>
+
+
+Instalar dependencias:
+
+npm install
+# o
+yarn install
+
+
+Ejecutar en modo desarrollo:
+
+npm run dev
+# o
+yarn dev
+
+
+Abrir en el navegador:
+
+http://localhost:5173
+ 🌐
+
+✨ Características destacadas
+
+✅ Portfolio responsive y moderno
+
+🎨 Animaciones suaves con GSAP y Framer Motion
+
+🖼️ Interactividad 3D con Spline
+
+📂 Secciones de información, proyectos y contacto completamente animadas
+
+🧹 Código limpio y modular, siguiendo buenas prácticas
+
+👨‍💻 Autor
+
+Pablo Fernández
