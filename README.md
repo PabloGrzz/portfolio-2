@@ -1,4 +1,4 @@
-🚀 Portfolio de Pablo Fernández
+# 🚀 Portfolio de Pablo Fernández
 
 Portfolio personal de Pablo Fernández, desarrollador Full Stack, que muestra proyectos web y móviles con animaciones interactivas y diseño moderno.
 
@@ -35,32 +35,6 @@ AboutSection 👤: Información personal con animaciones y estrellas flotantes.
 ProjectSection 💻: Portfolio de proyectos con scroll horizontal y animaciones GSAP.
 
 ContactSection 📩: Sección de contacto con animación de zoom y aparición de texto.
-
-⚡ Cómo ejecutar el proyecto
-
-Clonar el repositorio:
-
-git clone <URL_DEL_REPOSITORIO>
-
-
-Instalar dependencias:
-
-npm install
-# o
-yarn install
-
-
-Ejecutar en modo desarrollo:
-
-npm run dev
-# o
-yarn dev
-
-
-Abrir en el navegador:
-
-http://localhost:5173
- 🌐
 
 ✨ Características destacadas
 
