@@ -16,25 +16,25 @@ const ProjectSection = () => {
         {
             id:1,
             title: "Android App Cultivo",
-            imageSrc: "/images/project-1.png",
+            imageSrc: "/portfolio-2/images/project-1.png",
             url: "https://github.com/PabloGrzz/AppCultivo"
         },
         {
             id:2,
             title: "Spring APIRest App Cultivo",
-            imageSrc: "/images/project-2.jpg",
+            imageSrc: "/portfolio-2/images/project-2.jpg",
             url: "https://github.com/PabloGrzz/AppCultivo-Backend"
         },
         {
             id:3,
             title: "Porfolio Antiguo",
-            imageSrc: "/images/project-3.jpg",
+            imageSrc: "/portfolio-2/images/project-3.jpg",
             url: "https://github.com/PabloGrzz/portfolio-2"
         },
         {
             id:4,
             title: "Diseño web Angular",
-            imageSrc: "/images/project-4.jpg",
+            imageSrc: "/portfolio-2/images/project-4.jpg",
             url: "https://github.com/PabloGrzz/Angular-Demo-Pruebas"
         }
     ]
