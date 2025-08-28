@@ -28,12 +28,14 @@ const ProjectSection = () => {
         {
             id:3,
             title: "Porfolio Antiguo",
-            imageSrc: "/images/project-3.jpg"
+            imageSrc: "/images/project-3.jpg",
+            url: "https://github.com/PabloGrzz/portfolio-2"
         },
         {
             id:4,
-            title: "proyecto 4",
-            imageSrc: "/images/project-4.jpg"
+            title: "Diseño web Angular",
+            imageSrc: "/images/project-4.jpg",
+            url: "https://github.com/PabloGrzz/Angular-Demo-Pruebas"
         }
     ]
 
