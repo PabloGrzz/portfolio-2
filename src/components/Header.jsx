@@ -37,21 +37,30 @@ const Header = () => {
 
             <nav className='lg:flex hidden space-x-8 '>
 
-                {['Home', 'Sobre mi', 'Projectos','Experiencia', 'Contacto'].map((item, index) => (
-                    
-                    <motion.a 
-                    key={item}
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.7 + index * 0.2 }}
-                    className='relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-violet-400 font-medium
-                    transition-colors duration-300 group'
-                    href='#'>
+                {['Home', 'Sobre mi', 'Projectos', 'Contacto'].map((item, index) => {
+                    const hrefMap = {
+                        'Home': '#home',
+                        'Sobre mi': '#sobre-mi',
+                        'Projectos': '#projects',
+                        'Contacto': '#contact'
+                    };
+                    return (
+                        <motion.a 
+                        key={item}
+                        href={hrefMap[item]}
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.7 + index * 0.2 }}
+                        className='relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-violet-400 font-medium
+                        transition-colors duration-300 group'
+                        >
                         {item}
                         <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-violet-600 group-hover:w-full 
                         transition-all duration-300'></span>
-                    </motion.a >
-                ))}
+                        </motion.a>
+                    )
+                    })}
+
             </nav>
 
             {/*GitHub... Icons*/ }  
@@ -63,18 +72,21 @@ const Header = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{delay: 1.3, duration: 0.8}}
                 className='text-gray-700 dark:text-gray-300 hover:text-violet-600
-                dark:hover:text-violet-400 transition-colors duration-300' href='#'>
+                dark:hover:text-violet-400 transition-colors duration-300' 
+                href="https://github.com/PabloGrzz" target="_blank" rel="noopener noreferrer">
 
                     <FiGithub className='w-5 h-5'/>
 
                 </motion.a>
 
                 <motion.a 
+                
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{delay: 1.3, duration: 0.8}}
                 className='text-gray-700 dark:text-gray-300 hover:text-violet-600
-                dark:hover:text-violet-400 transition-colors duration-300' href='#'>
+                dark:hover:text-violet-400 transition-colors duration-300' 
+                href="https://github.com/PabloGrzz" target="_blank" rel="noopener noreferrer">
 
                     <FiTwitter className='w-5 h-5'/>
 
@@ -85,7 +97,8 @@ const Header = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{delay: 1.3, duration: 0.8}}
                 className='text-gray-700 dark:text-gray-300 hover:text-violet-600
-                dark:hover:text-violet-400 transition-colors duration-300' href='#'>
+                dark:hover:text-violet-400 transition-colors duration-300' 
+                href='https://www.linkedin.com/in/pablo-fernandez-sanchez-6a3125347/' target="_blank" rel="noopener noreferrer">
 
                     <FiLinkedin className='w-5 h-5'/>
 
@@ -131,26 +144,38 @@ const Header = () => {
         className='md:hidden overflow-hidden bg-white dark:bg-gray-900 shadow-lg px-4 py-5 space-y-5'>
 
             <nav className='flex flex-col space-y-3'>
-                {['Home', 'Sobre mi', 'Projectos','Experiencia', 'Contacto'].map((item) => (
-
-                    <a onClick={toggleMenu} className='text-gray-300 font-medium py-2' key={item} href='#'>
-                        {item}
+                {['Home', 'Sobre mi', 'Projectos', 'Contacto'].map((item) => {
+                const hrefMap = {
+                    'Home': '#home',
+                    'Sobre mi': '#sobre-mi',
+                    'Projectos': '#projects',
+                    'Contacto': '#contact'
+                };
+                return (
+                    <a
+                    key={item}
+                    href={hrefMap[item]}
+                    onClick={toggleMenu}
+                    className='text-gray-300 font-medium py-2'
+                    >
+                    {item}
                     </a>
-                ))}
+                )
+                })}
             </nav>
 
             <div className='pt-4 border-t border-gray-200 dark:border-gray-700'>
                 <div className='flex space-x-5'>
 
-                    <a href='#' >
-                        <FiGithub className="h-5 w-5 text-gray-300"/>
+                    <a href="https://github.com/PabloGrzz" target="_blank" rel="noopener noreferrer" >
+                        <FiGithub className="h-5 w-5 text-gray-300" />
                     </a>
 
-                    <a href='#' >
-                        <FiTwitter className="h-5 w-5 text-gray-300"/>
+                    <a href="https://github.com/PabloGrzz" target="_blank" rel="noopener noreferrer" >
+                        <FiTwitter className="h-5 w-5 text-gray-300" />
                     </a>
 
-                    <a href='#' >
+                    <a href='https://www.linkedin.com/in/pablo-fernandez-sanchez-6a3125347/' target="_blank" rel="noopener noreferrer" >
                         <FiLinkedin className="h-5 w-5 text-gray-300"/>
                     </a>
 

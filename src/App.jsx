@@ -27,11 +27,19 @@ export default function App() {
   return (
     <>
       <Header />
-      <HeroSection />
+      <div id="home">
+        <HeroSection />
+      </div>
       <CustomCursor />
-      <AboutSection/>
-      <ProjectSection />
-      <ContactSection />
+      <div id="sobre-mi">
+        <AboutSection />
+      </div>
+      <div id="projects">
+        <ProjectSection />
+      </div>
+      <div id="contact">
+        <ContactSection />
+      </div>
       <Footer />
     </>
   )
