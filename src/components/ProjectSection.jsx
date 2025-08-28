@@ -15,23 +15,25 @@ const ProjectSection = () => {
     const projectImages = [
         {
             id:1,
-            title: "3D Gaming Website",
-            imageSrc: "/images/project-1.png"
+            title: "Android App Cultivo",
+            imageSrc: "/images/project-1.png",
+            url: "https://github.com/PabloGrzz/AppCultivo"
         },
         {
             id:2,
-            title: "Starttup App",
-            imageSrc: "/images/project-2.png"
+            title: "Spring APIRest App Cultivo",
+            imageSrc: "/images/project-2.jpg",
+            url: "https://github.com/PabloGrzz/AppCultivo-Backend"
         },
         {
             id:3,
             title: "Porfolio Antiguo",
-            imageSrc: "/images/project-3.png"
+            imageSrc: "/images/project-3.jpg"
         },
         {
             id:4,
             title: "proyecto 4",
-            imageSrc: "/images/project-4.png"
+            imageSrc: "/images/project-4.jpg"
         }
     ]
 
@@ -202,9 +204,14 @@ const ProjectSection = () => {
                             className="project-image max-w-full max-h-full rounded-2xl object-cover"
                             src={project.imageSrc} alt="Project-img" />
 
-                            <h2 className="project-title flex items-center gap-3 md:text-3xl text-sm md:font-bold text-black mt-6 z-50 text-nowrap hover:text-gray-400 transition-colors duration-300 cursor-pointer">
+                            <a 
+                            href={project.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-3 md:text-3xl text-sm md:font-bold text-black mt-6 z-50 text-nowrap hover:text-gray-400 transition-colors duration-300 cursor-pointer"
+                            >
                                 {project.title} <SlShareAlt/>
-                            </h2>
+                            </a>
 
                         </div>
                     </div>
